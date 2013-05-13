@@ -1,5 +1,5 @@
 app.factory('parse', function($rootScope, $http) {
-	var parseURL = "http://localhost:3000/api";
+	var parseURL = "http://nodestrap.herokuapp.com/api";
 	return {
 		all: function(className, callback) {
 			$http.get(parseURL + '/' + className)
