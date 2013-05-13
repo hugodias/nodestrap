@@ -89,6 +89,10 @@ app.controller('UsersUpdateCtrl', ['$scope','parse','$routeParams', '$location',
 
 		$scope.save = function(){
 			$scope.user.username = slugify($scope.user.username);
+			if( $scope.user.username === 'admin')
+				// Cant change admins password!
+				$location.path('/');
+
 			user = $scope.user;
 			parse.update("users/" + user._id, {user: user},function(err,response){
 				//$scope.setFlash('Success','User updated succefully','success');
