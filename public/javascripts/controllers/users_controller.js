@@ -59,7 +59,7 @@ app.controller('UsersCreateCtrl', ['$scope','parse','$routeParams','$location',
 
 		}
 	}
-]);
+	]);
 
 app.controller('UsersUpdateCtrl', ['$scope','parse','$routeParams', '$location',
 	function UsersUpdateCtrl($scope,parse,$routeParams, $location){
@@ -96,7 +96,7 @@ app.controller('UsersUpdateCtrl', ['$scope','parse','$routeParams', '$location',
 			});
 		}
 	}
-]);
+	]);
 
 app.controller('UsersDetailCtrl', ['$scope', 'parse', '$routeParams',
 	function UsersDetailCtrl($scope, parse, $routeParams) {
