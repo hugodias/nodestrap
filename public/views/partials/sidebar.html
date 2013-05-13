@@ -1,0 +1,12 @@
+<div class="span3">
+	<div class="well sidebar-nav">
+		<input type="text" ng-model="search" placeholder="Search for users" class="search-query">
+		<hr>
+		<ul class="nav nav-list">
+			<li class="nav-header">Users</li>
+			<li data-ng-repeat="user in users | filter:search | orderBy: 'username'" data-ng-animate="'custom'">
+				<a href="#users/{{user.username}}">{{user.username}}</a>
+			</li>
+		</ul>
+	</div><!--/.well -->
+</div><!--/span-->

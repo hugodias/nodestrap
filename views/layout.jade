@@ -1,0 +1,44 @@
+doctype 5
+html
+	head
+	title= title
+	script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js')
+	script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js')
+	script(src='/javascripts/components/angular-resource/angular-resource.js')
+	script(src='/javascripts/app.js')
+	script(src='/javascripts/controllers/app_controller.js')
+	script(src='/javascripts/services/user_service.js')
+	script(src='/javascripts/controllers/users_controller.js')
+	link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+	style
+		body{
+			padding-top:100px;
+		}
+	link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
+	link(rel='stylesheet', href='/stylesheets/style.css')
+	body(data-ng-app="angularApp", data-ng-controller="AppCtrl")
+	- if (user)
+		div(class="userinfo", data-username="#{user.username}", data-email="#{user.email}")
+		.navbar.navbar-inverse.navbar-fixed-top
+				.navbar-inner
+					.container-fluid
+						button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.brand(href='/') NodeStrap
+						.nav-collapse.collapse
+							p.navbar-text.pull-right
+								| Logged in as
+								a.navbar-link(href='/account') {{logged}}
+							ul.nav
+								li.active
+									a(href='/') Home
+								li
+									a(href='/logout') Logout
+
+	div(class='container-fluid')
+		block content
+
+
+

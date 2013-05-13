@@ -1,0 +1,31 @@
+<div class="row-fluid" ng-controller="UsersCtrl">
+
+	<!-- Sidebar -->
+	<div ng-include="sidebar"></div>
+
+	<div class="span9">
+		<!-- Flash message -->
+
+		<div class="hero-unit">
+			<h1>Hey {{logged}}, welcome!</h1>
+			<hr>
+			<p>This is NodeStrap, a NodeJS template to start new projects.</p>
+			<p>NodeStrap uses:</p>
+			<ul>
+				<li>MongoDB (Mongoose)</li>
+				<li>Express</li>
+				<li>Passport ( Authentication) </li>
+				<li>AngularJS</li>
+			</ul>
+			<hr>
+			<p><a href="#users/new" class="btn btn-primary btn-large">Add new user &raquo;</a></p>
+		</div>
+	</div><!--/span-->
+</div><!--/row-->
+
+<hr>
+
+<footer>
+	<p>&copy; Company 2013</p>
+</footer>
+

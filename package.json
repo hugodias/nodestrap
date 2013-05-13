@@ -1,0 +1,18 @@
+{
+	"name": "NodeStrap",
+	"version": "0.0.1",
+	"engines": {
+		"node": "0.10.x",
+		"npm": "1.2.x"
+	},
+	"dependencies": {
+		"express": "3.1.x",
+		"connect-flash": "0.1.x",
+		"jade": "*",
+		"passport": ">= 0.0.0",
+		"passport-local": ">= 0.0.0",
+		"mongodb": ">= 0.0.0",
+		"mongoose": ">= 0.0.0",
+		"bcrypt": ">= 0.0.0"
+	}
+}

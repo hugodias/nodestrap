@@ -1,0 +1,10 @@
+<div class="row-fluid">
+	<div class="span12">
+		<ul class="breadcrumb well">
+			<li ng-repeat="link in breadcrumb" class="{{link.active}}">
+				<a ng-hide="link.active" href="{{link.url}}">{{link.title}}</a> <span class="divider" ng-hide="link.active">/</span>
+				<span ng-show="link.active">{{link.title}}</span>
+			</li>
+		</ul>
+	</div>
+</div>

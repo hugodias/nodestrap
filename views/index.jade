@@ -1,0 +1,5 @@
+extends layout
+
+block content
+	div(ng-include='flash.url', ng-show='flash')
+	div(ng-view,data-ng-animate="'custom'")

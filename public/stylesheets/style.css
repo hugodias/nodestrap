@@ -1,0 +1,89 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  cursor: pointer;
+}
+
+.alert-block h4{
+  color: white;
+}
+
+body {
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-signin h2{
+	color: #BBBBBB;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+.form-users input.ng-invalid.ng-dirty {
+  background-color: #FA787E;
+}
+.form-users input.ng-valid.ng-dirty {
+  background-color: #78FA89;
+}
+
+
+
+.custom-enter-setup,
+.custom-leave-setup,
+.custom-move-setup {
+  -webkit-transition: .2s linear all;
+  -moz-transition: .2s linear all;
+  -o-transition: .2s linear all;
+  transition: .2s linear all;
+  position:relative;
+}
+
+.custom-enter-setup {
+  left:-10px;
+  opacity:0;
+}
+.custom-enter-setup.custom-enter-start {
+  left:0;
+  opacity:1;
+}
+
+.custom-leave-setup {
+  left:0;
+  opacity:1;
+}
+.custom-leave-setup.custom-leave-start {
+  left:-10px;
+  opacity:0;
+}
+
+.custom-move-setup {
+  opacity:0.5;
+}
+.custom-move-setup.custom-move-start {
+  opacity:1;
+}
