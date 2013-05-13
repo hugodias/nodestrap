@@ -3,7 +3,7 @@
 
 # NodeStrap
 
-NodeStrap is a Front-end / Back-end template using AngularJS, Twitter Bootstrap ,MongoDB and NodeJS with authentication system for building NodeJS apps in seconds.
+NodeStrap is a Front-end / Back-end template using AngularJS, Twitter Bootstrap ,MongoDB and NodeJS with authentication system for building and deploy (Heroku ready) NodeJS apps in seconds.
 
 ## Quick start
 
@@ -35,6 +35,7 @@ You can try loggin in with `admin / admin`
 ##### [NodeJS 0.10.x](http://nodejs.org/)
 * Security Authentication system
 * Users CRUD
+* Ready for Heroku deploy
 
 
 #### Todo
