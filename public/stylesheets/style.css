@@ -2,6 +2,12 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+
+h1.main{
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 56px;
+}
 a {
   color: #00B7FF;
   cursor: pointer;
