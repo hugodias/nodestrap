@@ -52,12 +52,12 @@ userSchema.methods.comparePassword = function(candidatePassword, cb) {
 // Seed a user
 var User = mongoose.model('User', userSchema);
 
-// var user = new User({
-//   username: 'hugo',
-//   email: 'hugo.victor.dias.teodoro@gmail.com',
-//   password: 'hugo'
-// });
-// user.save();
+var user = new User({
+  username: 'admin',
+  email: 'admin@gmail.com',
+  password: 'admin'
+});
+user.save();
 
 
 // Passport session setup.
