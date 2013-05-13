@@ -103,7 +103,6 @@ var app = express();
 app.configure(function() {
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
-  app.engine('ejs', require('ejs-locals'));
   app.use(express.logger());
   app.use(express.cookieParser());
   app.use(express.bodyParser());
