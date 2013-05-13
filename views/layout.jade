@@ -17,6 +17,9 @@ html
 	link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
 	link(rel='stylesheet', href='/stylesheets/style.css')
 	body(data-ng-app="angularApp", data-ng-controller="AppCtrl")
+		a(href='https://github.com/hugodias/nodestrap')
+			img(style='position: absolute; top: 0; right: 0; border: 0; z-index: 999999', src='https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png', alt='Fork me on GitHub')
+
 	- if (user)
 		div(class="userinfo", data-username="#{user.username}", data-email="#{user.email}")
 		.navbar.navbar-inverse.navbar-fixed-top
