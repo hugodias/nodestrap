@@ -230,7 +230,7 @@ app.get('/logout', function(req, res){
 var port = process.env.PORT || 5000;
 
 app.listen(port, function() {
-  console.log('Express server listening on port 3000');
+  console.log('Express server listening on port 5000');
 });
 
 // Simple route middleware to ensure user is authenticated.
