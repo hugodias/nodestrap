@@ -126,3 +126,11 @@ app.controller('UsersDetailCtrl', ['$scope', 'parse', '$routeParams',
 			$scope.view($scope.username);
 		}
 	}]);
+
+
+app.controller('UsersDeleteCtrl',['$scope','parse','$routeParams','$location',
+	function UsersDeleteCtrl($scope, parse, $routeParams, $location) {
+		parse.remove("users", $routeParams.id, function(err, response){
+			$location.path('/');
+		})
+	}]);

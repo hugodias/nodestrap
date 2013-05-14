@@ -18,6 +18,10 @@ app.config(function ($routeProvider, $locationProvider) {
 		templateUrl: 'views/users/form.html',
 		controller: 'UsersUpdateCtrl'
 	})
+	.when('/users/:id/delete', {
+		templateUrl: 'views/users/view.html',
+		controller: 'UsersDeleteCtrl'
+	})
 	.otherwise({
 		redirectTo: '/'
 	});
