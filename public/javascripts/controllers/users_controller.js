@@ -130,7 +130,15 @@ app.controller('UsersDetailCtrl', ['$scope', 'parse', '$routeParams',
 
 app.controller('UsersDeleteCtrl',['$scope','parse','$routeParams','$location',
 	function UsersDeleteCtrl($scope, parse, $routeParams, $location) {
-		parse.remove("users", $routeParams.id, function(err, response){
+		if( $routeParams.username !== 'admin' ) {
+			parse.get("users/" + $routeParams.username, function(err, res){
+				parse.remove("users", res._id, function(err_delete, res_delete){
+					console.log(res_delete);
+					$location.path('/');
+				})
+			});
+		} else {
+			console.log('You cant delete the admin.');
 			$location.path('/');
-		})
+		}
 	}]);

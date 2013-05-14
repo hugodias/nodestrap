@@ -18,7 +18,7 @@ app.config(function ($routeProvider, $locationProvider) {
 		templateUrl: 'views/users/form.html',
 		controller: 'UsersUpdateCtrl'
 	})
-	.when('/users/:id/delete', {
+	.when('/users/:username/delete', {
 		templateUrl: 'views/users/view.html',
 		controller: 'UsersDeleteCtrl'
 	})
