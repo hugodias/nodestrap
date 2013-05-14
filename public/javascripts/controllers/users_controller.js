@@ -37,7 +37,7 @@ app.controller('UsersCreateCtrl', ['$scope','parse','$routeParams','$location',
 
 		$scope.breadcrumb = [{
 			title: 'Home',
-			url: '/'
+			url: '#/'
 		},
 		{
 			title: 'New user',
@@ -69,7 +69,7 @@ app.controller('UsersUpdateCtrl', ['$scope','parse','$routeParams', '$location',
 
 		$scope.breadcrumb = [{
 			title: 'Home',
-			url: '/'
+			url: '#/'
 		},
 		{
 			title: $routeParams.username,
@@ -111,7 +111,7 @@ app.controller('UsersDetailCtrl', ['$scope', 'parse', '$routeParams',
 
 		$scope.breadcrumb = [{
 			title: 'Home',
-			url: '/'
+			url: '#/'
 		},
 		{
 			title: $routeParams.username,
