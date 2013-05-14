@@ -53,9 +53,9 @@ userSchema.methods.comparePassword = function(candidatePassword, cb) {
 var User = mongoose.model('User', userSchema);
 
 var user = new User({
-	username: 'hugodias',
-	email: 'contato@pitchbox.com.br',
-	password: 'hugo'
+	username: 'admin',
+	email: 'admin@nodestrap.com',
+	password: 'admin'
 });
 user.save();
 
