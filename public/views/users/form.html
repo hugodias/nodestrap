@@ -10,16 +10,16 @@
 			<div class="control-group">
 				<label class="control-label" for="inputUsername">* Username</label>
 				<div class="controls">
-					<input type="text" ng-model="user.username" placeholder="Username" id="inputUsername" required>
+					<input type="text" ng-model="user.username" ng-disabled="user.username == 'admin'" placeholder="Username" id="inputUsername" required>
 				</div>
 			</div>
 			<div class="control-group">
 				<label class="control-label" for="inputEmail">* Email</label>
 				<div class="controls">
-					<input type="email" ng-model="user.email" placeholder="Email" id="inputEmail" required>
+					<input type="email" ng-disabled="user.username == 'admin'" ng-model="user.email" placeholder="Email" id="inputEmail" required>
 				</div>
 			</div>
-			<div class="control-group">
+			<div class="control-group" ng-show="user.username != 'admin'">
 				<label class="control-label" for="inputPassword">* Password</label>
 				<div class="controls">
 					<input type="text" ng-model="user.password" id="inputPassword" placeholder="password" required>
