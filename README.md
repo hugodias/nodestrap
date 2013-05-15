@@ -5,6 +5,11 @@
 
 NodeStrap is a Front-end / Back-end template using AngularJS, Twitter Bootstrap ,MongoDB and NodeJS with authentication system for building and deploy (Heroku ready) NodeJS apps in seconds.
 
+## Prerequisites
+* NodeJS 0.10.x
+* MongoDB
+
+
 ## Quick start
 
 Clone the git repo - `git clone https://github.com/hugodias/nodestrap.git` - or [download it](https://github.com/hugodias/nodestrap/zipball/master)
@@ -16,6 +21,9 @@ npm install
 
 Change your server API URL at `public/javascripts/services/user_services.js`
 <pre>var parseURL = "http://nodestrap.herokuapp.com/api";</pre>
+
+Start MongoDB
+<pre>mongod</pre>
 
 Run nodeJS
 <pre>node app.js</pre>
