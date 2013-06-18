@@ -5,9 +5,11 @@
 
 NodeStrap is a Front-end / Back-end template using AngularJS, Twitter Bootstrap ,MongoDB and NodeJS with authentication system for building and deploy (Heroku ready) NodeJS apps in seconds.
 
-## Prerequisites
+## NodeStrap uses the MEAN Stack
 * NodeJS 0.10.x
 * MongoDB
+* Express
+* AngularJS
 
 
 ## Quick start
